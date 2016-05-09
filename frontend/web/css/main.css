@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url('bootstrap.min.css');
+@import url('font-awesome.min.css');
+html,body{height: 100%}
+body{background: url(../images/souvenirs.jpg) repeat center;background-size: 100%;background-attachment: fixed}
+body > .container{padding-top: 15px;min-height: 100%;background: rgba(255,255,255,.7);border-right:5px solid #13ADD6;border-left:5px solid #13ADD6;}
+.item{padding: 1em}
+.item .border{padding: 1em;border: 4px solid #F6B228;border-radius: 5px}
+.item img{max-width: 100%}
+
+#cart table {font-size: 18px;background: white;text-align: center;}
+#payment dl dt{width: 40%}
+#payment dl dd{width: 40%;margin-left: 50%}
+
+#errorModal{}
+
+/*#paymentForm input{width: 150px}*/

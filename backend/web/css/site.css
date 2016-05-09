@@ -1,0 +1,58 @@
+@import url('bootstrap.css');
+@import url('bootstrap.min.css');
+/*@import url('bootstrap-responsive.min.css');*/
+@import url('font-awesome.min.css');
+@import url('bootstrap-modal.css');
+@import url('bootstrap-modal-bs3patch.css');
+@import url('alertify/alertify.min.css');
+@import url('alertify/themes/default.min.css');
+@import url('alertify/themes/bootstrap.min.css');
+@import url('jquery-ui.min.css');
+@import url('jquery.dataTables.min.css');
+
+
+@import url('template.css');
+form{margin: 0}
+label input, label textarea, label select{display: inline-block;}
+/*a{color: #1d4c68}*/
+.text-center{text-align: center !important;}
+.alertify-notifier h3{margin: 0}
+.alertify-notifier h4{margin: 0}
+.container{width:1170px !important}
+.row{margin-left: -15px}
+/*Navbar*/
+.topnav{background-color: #26BCD0 !important;}
+.main{border-bottom: 0}
+/*MainInner*/
+body{background: #FFE096;font-family:Arial, Helvetica, sans-serif;}
+.mycontainer{background-color: #FFFFFF; border-radius: 10px; padding: 30px;}
+.myheader{background-color: #26BCD0; color:#FFFFFF;}
+.myheader-edit{background-color:#8C0C60 ; color:#FFFFFF;}
+#ui-datepicker-div{z-index: 99999 !important}
+.modal .loading-mask{z-index: 100}
+
+.hasDataTableAjax th input,.hasDataTableAjax th select{width: 100px !important}
+.dataTables_wrapper .dataTables_info{float: none;}
+.dataTables_wrapper .dataTables_length{float: none;}
+.closeModal{color:#FFFFFF;opacity: 1;}
+.tab-content{border:1px solid #ddd ;border-top: none;}
+.nav-tabs{margin-bottom: 0}
+.tab-pane{padding: 10px}
+.modal-header{padding: 10px}
+
+tr.no-border td{border: hidden !important;}
+
+.hasDataTableAjax tbody tr td:last-child .btn{margin-right: 5px}
+.hasDataTableAjax tbody tr td:last-child .btn:last-child{margin-right: 0px}
+
+.btn-primary{background: #26BCD0;border: none;}
+.btn-primary:hover{background: #FBC24C;}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{background:#FBC24C;border-color: #FBC24C }
+
+.no-margin{margin: 0 !important}
+.no-padding{padding: 0 !important}
+.trumbowyg-box, .trumbowyg-editor{margin: 0 !important;width: 100% !important}
+
+.zoomContainer{z-index: 9999 !important}
+
+.subnavbar .container > ul > li.active > a{border-bottom: 3px solid #26BCD0}
