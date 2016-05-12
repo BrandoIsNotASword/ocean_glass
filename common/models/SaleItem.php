@@ -13,16 +13,16 @@ class SaleItem extends ActiveRecord
 	public function rules()
 	{
 		return [
-			[['itemID','orderID','total','discount','color','sizeID','quantity'],'required'],
+			[['itemID','saleID','total','discount','color','sizeID','quantity'],'required'],
 		];
 	}
 	public function getItem()
 	{
 		return $this->hasOne(Item::classname(),['id'=>'itemID']);
 	}
-	public function getOrder()
+	public function getSale()
 	{
-		return $this->hasOne(Order::classname(),['id'=>'orderID']);
+		return $this->hasOne(Sale::classname(),['id'=>'saleID']);
 	}
 	public function getPromotion()
 	{

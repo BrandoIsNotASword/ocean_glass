@@ -27,11 +27,12 @@ AppAsset::register($this);
           <ul class="mainnav" style='width:100%'>
             <li><img style='max-width:82px' src="/img/Logo.png"></li>
               <li class="<?= Yii::$app->controller->id=='sales'?"active":"" ?>"><a href="/"><i class="icon-dashboard"></i><span>Ventas</span> </a> </li>
-              <li class="<?= Yii::$app->controller->id=='items'?"active":"" ?>"><a href="<?= Url::toRoute('items/') ?>"><i class="icon-list-alt"></i><span>Articulos</span> </a> </li>
+              <li class="<?= Yii::$app->controller->id=='items'?"active":"" ?>"><a href="<?= Url::toRoute('items/') ?>"><i class="icon-list-alt"></i><span>Artículos</span> </a> </li>
               <?php if (Yii::$app->user->identity->accessLevel==User::AccessLevelMaster): ?>
                 <li class="<?= Yii::$app->controller->id=='users'?"active":"" ?>"><a href="<?= Url::toRoute('users/') ?>"><i class="icon-group"></i><span>Usuario</span> </a> </li>
               <?php endif ?>
               <li class="<?= Yii::$app->controller->id=='settings'?"active":"" ?>"><a href="<?= Url::toRoute('settings/') ?>"><i class="icon-gear"></i><span>Configuraciones</span> </a> </li>
+              <li class="<?= Yii::$app->controller->id=='reports'?"active":"" ?>"><a href="<?= Url::toRoute('reports/') ?>"><i class="icon-file"></i><span>Reportes</span> </a> </li>
               <li class="dropdown pull-right" style='border:0'>
                 <a href="#" class="dropdown-toggle text-capitalize" data-toggle="dropdown">
                   <i class="icon-user"></i>

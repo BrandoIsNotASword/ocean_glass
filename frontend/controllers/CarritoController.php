@@ -142,12 +142,14 @@ class CarritoController extends Controller
     }
     public function actionPay($a,$b)
     {
-        $sale = Sale::findOne(['id'=>$a,'token'=>$b,'status'=>Sale::StatusPending]);
-        if(isset($sale)){
+        $sale = Sale::findOne(['id'=>$a,'token'=>$b]);
+        if(isset($sale) && $sale->status == Sale::StatusPending){
             $sale->status = Sale::StatusPayed;
             $sale->discountInventory();
             $sale->save();
             $this->sendMail($sale);
+            return $this->redirect(Url::toRoute('carrito/pago-realizado'));
+        }else if(isset($sale)){
             return $this->redirect(Url::toRoute('carrito/pago-realizado'));
         }else{
             echo "No se encontró pedido";
